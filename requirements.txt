@@ -1,0 +1,9 @@
+Flask
+Flask-CORS
+PyMuPDF
+sentence-transformers
+scikit-learn
+numpy
+torch
+transformers
+Werkzeug
