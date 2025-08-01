@@ -11,6 +11,7 @@ from sentence_transformers import SentenceTransformer
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 import logging
+const port = process.env.PORT || 4000
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
