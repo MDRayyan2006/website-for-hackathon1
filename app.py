@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 CORS(app)
-
+model = SentenceTransformer('paraphrase-MiniLM-L3-v2')
 # Configuration
 UPLOAD_FOLDER = 'uploads'
 PROCESSED_FOLDER = 'processed'
@@ -30,7 +30,7 @@ os.makedirs(PROCESSED_FOLDER, exist_ok=True)
 
 # Initialize sentence transformer model
 try:
-    model = SentenceTransformer('all-MiniLM-L12-v2')
+    
     logger.info("Sentence transformer model loaded successfully")
 except Exception as e:
     logger.error(f"Error loading sentence transformer: {e}")
