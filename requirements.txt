@@ -7,4 +7,3 @@ numpy
 torch
 transformers
 Werkzeug
-gunicorn
