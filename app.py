@@ -30,7 +30,7 @@ os.makedirs(PROCESSED_FOLDER, exist_ok=True)
 
 # Initialize sentence transformer model
 try:
-    model = SentenceTransformer('all-MiniLM-L6-v2')
+    model = SentenceTransformer('all-MiniLM-L12-v2')
     logger.info("Sentence transformer model loaded successfully")
 except Exception as e:
     logger.error(f"Error loading sentence transformer: {e}")
